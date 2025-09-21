@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.number-display {
+    font-size: 60px;
+    font-weight: bold;
+    color: #222;
+    background-color: #f7f7f7;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 3px dashed #4caf50;
+    transition: all 0.3s ease;
+    min-height: 100px;
+}
+
+button {
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#startBtn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#resetBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+.completion-message {
+    display: none;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #2e7d32;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
